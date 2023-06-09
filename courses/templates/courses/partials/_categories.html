@@ -1,0 +1,9 @@
+
+<div class="list-group">
+    {% for category  in categories %}
+        {% comment %} dinamik olarak /kurs kısmını aldım.Kurslar şeklinde vb.değiştirirsem otomatik değişecek  {% endcomment %}
+        <a href="{% url 'courses_by_category' category.slug %}"
+         class="list-group-item list-group-item-action">
+         {{category.name|title}}</a>
+    {% endfor %}
+</div>
