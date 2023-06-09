@@ -11,3 +11,4 @@ Web sayfasının şablonunu oluşturmak için uygulama ve proje kapsamında temp
 Bootstrap kütüphaneleri için **static js ve static css** dosyaları oluşturuldu ve browserdan veri almak yerine, projeye kayıtlı static dosyalarından veri alındı.
 
 Proje üzerinde çalışmaya devam edeceğim.
+
