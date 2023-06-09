@@ -6,7 +6,17 @@ from . import views
 
 
 urlpatterns = [
-    path('',views.home),
-    path('anasayfa',views.home),
-    path('kurslar',views.kurslar),
+    path('',views.index),
+    path('<slug:slug>',views.details, name="course_details"),
+    
+       # datails metoduyla getCourses metodları birbirine karışmasın diye, kategori/ adında sabit belirledik.
+       # Aksi halde details üstte olduğu için o methodu görür, alttakileri çalıştırmaz.
+       # kurs/programlama yazarsam programlama detayları der. buna engel olmak için kurs/kategori/programlama yapıyorum.
+    
+    path('kategori/<int:category_id>',views.getCoursesByCategoryId),
+    path('kategori/<str:category_name>',views.getCoursesByCategory, name = 'courses_by_category'),
+  
+    
+    
+    
 ]
