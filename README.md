@@ -2,7 +2,7 @@
 
 Hazır bootstrap kütüphanelerinden faydanarak projemi oluşturdum. Bu sebeple **Html & CSS** kodlarını elle yazmak zorunda kalmadım.
 
-İlk etapta database kullanmadan **db ve data** objeleriyle veriler elle girildi. Daha sonra _migrations_ oluşturuldu ve database bağlantısı sağlandı.
+İlk etapta database kullanmadan **db ve data** objeleriyle veriler elle girildi. Daha sonra _migrations_ oluşturuldu ve database bağlantısı sağlandı. Herhangi bir veritabanı kullanamdan, **SQL** yazmadan; proje üzerinden, hazır methodlar aracılığıyla db oluşturdum. Django **models** yapısı kullanıldı.
 
 Web sayfasının şablonunu oluşturmak için uygulama ve proje kapsamında templates dosyaları  oluşturdum. Bu tekrar eden kod bloklarının her defasında yeniden yazılmasını engellemiş oldu.
 - templates/pages(about-contact-index)
